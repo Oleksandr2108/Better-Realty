@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BETTER REALTY</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fat=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&family=Roboto+Mono:wght@600&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- OG Tags -->
+    <meta property="og:title" content="Рієлторська агенція">
+    <meta property="og:description"
+        content="Шукайте квартиру? Тоді вам точно до нас! Підберемо, допоможемо та поселимо.">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://BETTERREALTY.com/img/preview.jpg">
+    <meta property="og:site_name" content="">
+
+    <!-- Styling -->
+    <meta name="theme-color" content="BETTER REALTY">
+    <link rel='apple-touch-icon' href='img/apple-touch-icon.png'>
+    <link rel="icon" type="img/png" href="img/Favicon.png">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-wrapper">
+                    <a href="index.html" class="logo"></a>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="city-about.html">Про місто</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="about.html">Про нас</a>
+                            </li>
+                            <li class="menu__item">
+                                <button type="button" id="menu-btn" class="menu-btn active">Центр продажу </button>
+                            </li>
+                            <li class="menu__item">
+                                <a href="contact.html">Контакти</a>
+                            </li>
+
+                        </ul>
+                    </nav>
+
+                    <div class="hamburger" id="hamburger">
+                        <img src="img/hamburger.png" alt="Hamburger">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- /* Modal window */ -->
+        <div class="wrapper-modal" id="wrapper-modal">
+            <div class="overlay" id="overlay"></div>
+            <div class="modal-window">
+                <button type="button" class="modal-window__close" id="close-modal"></button>
+                <div class="modal-advice">
+                    <div class="advice-info-modal">
+                        <h3 class="advice-info__title-modal">Отримайте детальну консультацію</h3>
+                        <p class="advice-info__about-modal">Заповніть анкету, щоб отримати детальну відповідь на
+                            ваші
+                            запитання та
+                            попередню вартість.</p>
+                    </div>
+                    <form action="sendmail.php" id="form" class="advice-form-modal">
+                        <input type="text" placeholder="Ваше ім'я" class="advice-form__input req" name="name"
+                            pattern="[А-Яа-я]+" title="Введіть ім'я правильно " required>
+                        <input type="text" placeholder="Бажана площа Вашої квартири" class="advice-form__input req"
+                            name="area" pattern="[0-9]+" title="Введіть площу,тільки цифри" required>
+                        <input type="text" placeholder="Однокімнатна або двокімнатна квартира"
+                            class="advice-form__input req" name="apart" required>
+                        <input type="tel" placeholder="Номер телефону" class="advice-form__input req tel" name="tel"
+                            pattern="[0-9+]+" min="10" max="13" title="Введіть номер правильно!" required>
+                        <button type="submit" class="advice-form__btn btn">Відправити</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <section class="main-top">
+        <div class="container">
+            <div class="header-main">
+                <div class="main-offer">
+                    <h1 class="offer-title">Рієлторська агенція</h1>
+                    <p class="offer-intro">Шукайте квартиру? Тоді вам точно до нас! Підберемо, допоможемо та поселимо.
+                    </p>
+                    <a href="apartments.html" class="header-btn">Вибрати квартиру</a>
+                </div>
+                <div class="main-offer">
+                    <img src="img/mask.png" class="offer-img" data-speed="40"></img>
+                    <a href="#choice" class="offer-arrow"></a>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section class="choice" id="choice">
+        <div class="choice-photo">
+            <div class="choice-img">
+                <img src="img/img1.jpg" class="img__list">
+                <div class="choice-offer">
+                    <a href="apartments.html">
+                        <p class="choice-offer__title">Однокімнатна</p>
+                    </a>
+                    <img src="img/vector.svg" class="choice-offer__arrow" alt="">
+                </div>
+
+            </div>
+            <div class="choice-img">
+                <img src="img/img2.jpg" class="img__list">
+                <div class="choice-offer"><a href="apartments.html">
+                        <p class="choice-offer__title">Двокімнатна</p>
+                    </a>
+                    <img src="img/vector.svg" class="choice-offer__arrow" alt="">
+
+                </div>
+            </div>
+            <div class="choice-img">
+                <img src="img/img3.jpg" class="img__list">
+                <div class="choice-offer">
+                    <a href="apartments.html">
+                        <p class="choice-offer__title">Офісні приміщення</p>
+                    </a>
+                    <img src="img/vector.svg" class="choice-offer__arrow" alt="">
+                </div>
+            </div>
+            <div class="choice-img">
+                <img src="img/img4.jpg" class="img__list">
+                <div class="choice-offer">
+                    <a href="apartments.html">
+                        <p class="choice-offer__title">Студія</p>
+                    </a>
+                    <img src="img/vector.svg" class="choice-offer__arrow" alt="">
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+    <section class="peculiarities">
+        <div class="container">
+            <h2 class="peculiarities-title title">Чому ми?</h2>
+            <div class="peculiarities-wrapper">
+
+                <div class="wrapper-about">
+                    <img src="img/hous.png" class="about-img">
+                    <div class="about-num">
+                        <h3 class="about-title">135
+                        </h3>
+                        <p class="about-offer">Квартири</p>
+                    </div>
+                </div>
+
+                <div class="wrapper-about">
+                    <img src="img/roulette.png" class="about-img">
+                    <div class="about-num">
+                        <h3 class="about-title">0.3 га</h3>
+                        <p class="about-offer">Площа забудови
+                        </p>
+                    </div>
+                </div>
+
+                <div class="wrapper-about">
+                    <img src="img/floors.png" class="about-img">
+                    <div class="about-num">
+                        <h3 class="about-title">10</h3>
+                        <p class="about-offer">Поверхів</p>
+                    </div>
+                </div>
+
+            </div>
+            <p class="peculiarities-info">При передачі квартири власнику в квартирі будуть вхідні двері, вікна,
+                балконний блок, газовий котел, батареї, чорнова штукатурка стін, чорнова стяжка підлоги. </p>
+        </div>
+    </section>
+
+    <section class="map">
+        <h2 class="map-title title">Ми на карті</h2>
+        <div class="cart" id="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2629.5535923200005!2d30.220532715551748!3d48.77132067927905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d20d7bafde1337%3A0x4813cfdc102f38f0!2z0LLRg9C70LjRhtGPINCU0LbQtdGA0LXQu9GM0L3QsCwgMSwg0KPQvNCw0L3RjCwg0KfQtdGA0LrQsNGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCAyMDMwMA!5e0!3m2!1sru!2sua!4v1648564759353!5m2!1sru!2sua"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <p class="map-intro">20300, Умань, вул. Джерельна, 1 (біля Епіцентру)</p>
+
+    </section>
+
+    <section class="advice">
+        <div class="container">
+            <div class="advice-wrapper">
+                <div class="advice-info-modal">
+                    <h3 class="advice-info__title">Отримайте детальну консультацію</h3>
+                    <p class="advice-info__about">Заповніть анкету, щоб отримати детальну відповідь на ваші запитання та
+                        попередню вартість.</p>
+                </div>
+                <form action="sendmail.php" id="form-second" class="advice-form-modal">
+                    <input type="text" placeholder="Ваше ім'я" class="advice-form__input req" name="name"
+                        pattern="[А-Яа-я]+" title="Введіть ім'я правильно " required>
+                    <input type="text" placeholder="Бажана площа Вашої квартири" class="advice-form__input req"
+                        name="area" pattern="[0-9]+" title="Введіть площу,тільки цифри" required>
+                    <input type="text" placeholder="Однокімнатна або двокімнатна квартира"
+                        class="advice-form__input req" name="apart" required>
+                    <input type="tel" placeholder="Номер телефону" class="advice-form__input req tel" name="tel"
+                        pattern="[0-9+]+" min="10" max="13" title="Введіть номер правильно!" required>
+                    <input type="submit" class="advice-form__btn btn">Відправити</input>
+                </form>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-info">
+                    <a href="index.html" class="logo"></a>
+                    <p class="footer-info__text footer-text">Ріелторська агенція</p>
+                    <div class="footer-web">
+                        <a href="" class="footer-web__site"><img src="img/whatsapp.png" alt=""></a>
+                        <a href="" class="footer-web__site"><img src="img/inst.png" alt=""></a>
+                        <a href="" class="footer-web__site"><img src="img/email.png" alt=""></a>
+                        <a href="" class="footer-web__site"><img src="img/facebook.png" alt=""></a>
+                    </div>
+
+                </div>
+                <div class="footer-contact">
+                    <p class="footer-contact-text footer-text">Контакти</p>
+                    <p class="footer-contact-text footer-text">+380 73 102 01 20</p>
+                    <p class="footer-contact-text footer-text">komfort.uman@gmail.com</p>
+                    <p class="footer-contact-text work footer-text">Години роботи:
+                        Пн-пт: 9.00-18.00</p>
+                </div>
+                <div class="footer-support">
+                    <a href="" class="footer-support__whatsapp"></a>
+                    <p class="footer-support__text footer-text">Чат підтримки WhatsApp
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

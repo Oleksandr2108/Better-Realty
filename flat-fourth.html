@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BETTER REALTY</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fat=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/flat.css">
+
+
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&family=Roboto+Mono:wght@600&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- OG Tags -->
+    <meta property="og:title" content="Рієлторська агенція">
+    <meta property="og:description"
+        content="Шукайте квартиру? Тоді вам точно до нас! Підберемо, допоможемо та поселимо.">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://BETTERREALTY.com/img/preview.jpg">
+    <meta property="og:site_name" content="">
+
+    <!-- Styling -->
+    <meta name="theme-color" content="BETTER REALTY">
+    <link rel='apple-touch-icon' href='img/apple-touch-icon.png'>
+    <link rel="icon" type="img/png" href="img/Favicon.png">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-wrapper">
+                    <a href="index.html" class="logo"></a>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="city-about.html">Про місто</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="about.html">Про нас</a>
+                            </li>
+                            <li class="menu__item">
+                                <button type="button" class="menu-btn" id="menu-btn">Центр продажу </button>
+                            </li>
+                            <li class="menu__item">
+                                <a href="contact.html">Контакти</a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                    <div class="hamburger" id="hamburger">
+                        <img src="img/hamburger.png" alt="Hamburger">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- /* Modal window */ -->
+        <div class="wrapper-modal" id="wrapper-modal">
+            <div class="overlay" id="overlay"></div>
+            <div class="modal-window">
+                <button type="button" class="modal-window__close" id="close-modal"></button>
+                <div class="modal-advice">
+                    <div class="advice-info-modal">
+                        <h3 class="advice-info__title-modal">Отримайте детальну консультацію</h3>
+                        <p class="advice-info__about-modal">Заповніть анкету, щоб отримати детальну відповідь на
+                            ваші
+                            запитання та
+                            попередню вартість.</p>
+                    </div>
+                    <form action="sendmail.php" id="form" class="advice-form-modal">
+                        <input type="text" placeholder="Ваше ім'я" class="advice-form__input req" name="name"
+                            pattern="[А-Яа-я]+" title="Введіть ім'я правильно " required>
+                        <input type="text" placeholder="Бажана площа Вашої квартири" class="advice-form__input req"
+                            name="area" pattern="[0-9]+" title="Введіть площу,тільки цифри" required>
+                        <input type="text" placeholder="Однокімнатна або двокімнатна квартира"
+                            class="advice-form__input req" name="apart" required>
+                        <input type="tel" placeholder="Номер телефону" class="advice-form__input req tel" name="tel"
+                            pattern="[0-9+]+" min="10" max="13" title="Введіть номер правильно!" required>
+                        <button type="submit" class="advice-form__btn btn">Відправити</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <section class="top">
+        <div class="container">
+            <div class="top-wrapper">
+                <div class="top-img"><img src="img/flat.jpg"></div>
+                <div class="top-info">
+                    <h1 class="top-title">Однокімнатна квартира</h1>
+                    <p class="top-intro">
+                        Продаж 1 кімнатної кварири в ЖК Комфорт. Ідеальне інвестиційне рішення як собі,так здавання у
+                        найм.
+                    </p>
+                    <p class="top-intro intro-second">
+                        Це проект, що відповідає світовим стандартам у галузі будівництва, в якому реалізовані сучасні
+                        дизайнерські та архітектурні ідеї, використані нові технологічні рішення!
+                    </p>
+                    <a href="apartments.html" class="top-btn">Вибрати квартиру</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="choice">
+        <div class="container">
+            <div class="choice-wrapper">
+                <h3 class="choice-title">Вибір поверху</h3>
+                <div id="block-wrapper" class="block-wrapper">
+                    <div class="block-num" id="block-num">1</div>
+                    <button id="block-btn" class="block-btn"> </button>
+                    <ul id="block-list" class="block-list">
+                        <li id="block-item" class="block-item" data-num="1">1</li>
+                        <li id="block-item" class="block-item" data-num="2">2</li>
+                        <li id="block-item" class="block-item" data-num="3">3</li>
+                        <li id="block-item" class="block-item" data-num="4">4</li>
+                        <li id="block-item" class="block-item" data-num="5">5</li>
+                        <li id="block-item" class="block-item" data-num="6">6</li>
+                        <li id="block-item" class="block-item" data-num="7">7</li>
+                        <li id="block-item" class="block-item" data-num="8">8</li>
+                        <li id="block-item" class="block-item" data-num="9">9</li>
+                        <li id="block-item" class="block-item" data-num="10">10</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="photo">
+        <div class="container">
+            <div class="photo-wrapper">
+                <img src="img/flat4.jpg" alt="" class="photo-img">
+                <img src="img/plan4.jpg" alt="" class="photo-img">
+            </div>
+            <div class="photo-intro">
+                <p class="photo-text">Однокімнатна квартира</p>
+                <p class="photo-text">Загальна площа до 41 м².</p>
+                <p class="photo-text">Житлова площа до 19 м².</p>
+            </div>
+
+            <p class="photo-offer">При передачі квартири власнику в квартирі будуть вхідні двері, вікна, балконний блок,
+                газовий котел, батареї, чорнова штукатурка стін, чорнова стяжка підлоги.</p>
+
+        </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-info">
+                    <a href="index.html" class="logo"></a>
+                    <p class="footer-info__text footer-text">Ріелторська агенція</p>
+                    <div class="footer-web">
+                        <a href="" class="footer-web__site"><img src="img/whatsapp.png" alt=""></a>
+                        <a href="" class="footer-web__site"><img src="img/inst.png" alt=""></a>
+                        <a href="" class="footer-web__site"><img src="img/email.png" alt=""></a>
+                        <a href="" class="footer-web__site"><img src="img/facebook.png" alt=""></a>
+                    </div>
+
+                </div>
+                <div class="footer-contact">
+                    <p class="footer-contact-text footer-text">Контакти</p>
+                    <p class="footer-contact-text footer-text">+380 73 102 01 20</p>
+                    <p class="footer-contact-text footer-text">komfort.uman@gmail.com</p>
+                    <p class="footer-contact-text work footer-text">Години роботи:
+                        Пн-пт: 9.00-18.00</p>
+                </div>
+                <div class="footer-support">
+                    <a href="" class="footer-support__whatsapp"></a>
+                    <p class="footer-support__text footer-text">Чат підтримки WhatsApp
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/choice.js"></script>
+</body>
+
+
+</html>
